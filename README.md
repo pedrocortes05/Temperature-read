@@ -9,6 +9,7 @@ python main.py
 ```
 
 Options
+```
 --folder
     Select folder location for videos
 
@@ -20,7 +21,8 @@ Options
 
 --save-frames
     Save image every 5 seconds
-
+```
+Examples:
 ```shell
 python main.py --folder videos
 
