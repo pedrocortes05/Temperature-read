@@ -153,7 +153,6 @@ def process_video(video_path, save_plot=False, save_frames=False, show_plot=Fals
 
     cap.release()
     cv2.destroyAllWindows()
-    return timestamps, temperatures
 
     # Save CSV
     csv_path = os.path.join("output", f"{name_no_ext}_temperature.xlsx")
@@ -182,6 +181,7 @@ def process_video(video_path, save_plot=False, save_frames=False, show_plot=Fals
         else:
             plt.close()
 
+    return timestamps, temperatures
 
 def main():
     parser = argparse.ArgumentParser(description="Thermal video analysis")
